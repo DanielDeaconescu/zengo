@@ -1,0 +1,939 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* General Styles */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--normal-font);
+}
+
+/* General Styles */
+
+/* Variables for General Styles */
+
+:root {
+    --special-font: 'Lobster', cursive;
+    --normal-font: 'Open Sans', sans-serif;
+    --red-color: #dc2929;
+    --dark-blue-color: #1e2631;
+    --grey-color: #616e7f;
+}
+
+/* Variables for General Styles */
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(38, 41, 48, 0.95);
+    padding: 20px 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-left{
+    display: flex;
+}
+
+.navbar-logo{
+    align-self: center;
+}
+
+.navbar-info{
+    padding-left: 15px;
+}
+
+.navbar-zengo{
+    color: #dc2929;
+    font-family: var(--special-font);
+    font-size: 25px;
+}
+
+.navbar-small{
+    font-size: 10px;
+    color: #fff;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-items{
+    display: flex;
+    list-style: none;
+}
+
+/* NAVBAR BURGER */
+.navbar-burger{
+    height: 30px;
+    width: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.first-layer{
+    background-color: #fff;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.second-layer{
+    background-color: #fff;
+    width: 100%;
+    height: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.third-layer{
+    background-color: #fff;
+    width: 100%;
+    height: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* NAVBAR BURGER */
+
+.navbar-link{
+    padding: 0 10px;
+    color: #fff;
+}
+
+.navbar-link-active{
+    color: #dc2929;
+}
+
+.general-link-style{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.general-link-style:hover{
+    color: #dc2929;
+}
+
+/* NAVBAR */
+
+/* PART - 1 */
+
+.zengo-part-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    background-image: url('img/part1_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.zengo-welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-welcome{
+    color: #fff;
+}
+
+.welcome-text{
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 0px;
+}
+
+.part-1-btn-link{
+    text-decoration: none;
+}
+
+.part-1-btn{
+    color: #fff;
+    display: flex;
+}
+
+.header-welcome .zengo-text{
+    font-style: normal;
+    color: #dc2929;
+    font-family: var(--special-font);
+}
+
+.triangle-1{
+    border-right: 20px solid #dc2929;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.btn-text{
+    background-color: #dc2929;
+    display: flex;
+    align-items: center;
+}
+
+.triangle-2{
+    border-left: 20px solid #dc2929;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+/* PART - 1 */
+
+
+/* PART - 2 */
+.div-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-about{
+    font-family: var(--special-font);
+    margin: 0;
+    font-size: 45px;
+}
+
+.header-text{
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+.header-about .about-text{
+    font-style: normal;
+    font-family: var(--special-font);
+    color: #dc2929;
+}
+
+.div-line{
+    height: 1px;
+    width: 25%;
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-header{
+    padding: 65px 0px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.div-line-red{
+    background-color: #dc2929;
+    width: 25%;
+    height: 5px;
+}
+
+.zengo-part-2-container{
+    padding: 0;
+}
+
+.part-2-text{
+    color: #515862;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px 75px;
+}
+
+.part-2-hexagones{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px 120px;
+}
+
+.hexagon-top{
+    width: 0;
+    border-bottom: 50px solid #dee0df;
+    border-left: 72px solid transparent;
+    border-right: 72px solid transparent;
+}
+
+.hexagon-middle{
+    width: 144px;
+    height: 75px;
+    background-color: #dee0df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon-bottom{
+    width: 0;
+    border-top: 50px solid #dee0df;
+    border-left: 72px solid transparent;
+    border-right: 72px solid transparent;
+}
+
+.section-1, 
+.section-2, 
+.section-3,
+.section-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hexagon-1, 
+.hexagon-2,
+.hexagon-3,
+.hexagon-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-underneath{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title{
+    font-family: var(--special-font);
+    font-size: 25px;
+}
+
+.short-description{
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.read-more-link{
+    text-decoration: none;
+    color: #dc2929;
+    font-weight: 600;
+}
+
+.read-more-link:hover{
+    color: #db2929;
+}
+
+.part-2-hexagones{
+    padding: 
+}
+
+/* Hover effects for the Hexagones */
+/* Hexagon 1 */
+.hexagon-1:hover > .hexagon-top {
+    border-bottom: 50px solid #db2929;
+}
+
+.hexagon-1:hover > .hexagon-middle {
+    background-color: #db2929;
+    color: #fff;
+}
+
+.hexagon-1:hover > .hexagon-bottom {
+    border-top: 50px solid #db2929;
+}
+/* Hexagon 1 */
+
+/* Hexagon 2 */
+.hexagon-2:hover > .hexagon-top {
+    border-bottom: 50px solid #db2929;
+}
+
+.hexagon-2:hover > .hexagon-middle {
+    background-color: #db2929;
+    color: #fff;
+}
+
+.hexagon-2:hover > .hexagon-bottom {
+    border-top: 50px solid #db2929;
+}
+/* Hexagon 2 */
+
+/* Hexagon 3 */
+.hexagon-3:hover > .hexagon-top {
+    border-bottom: 50px solid #db2929;
+}
+
+.hexagon-3:hover > .hexagon-middle {
+    background-color: #db2929;
+    color: #fff;
+}
+
+.hexagon-3:hover > .hexagon-bottom {
+    border-top: 50px solid #db2929;
+}
+/* Hexagon 3 */
+
+/* Hexagon 4 */
+.hexagon-4:hover > .hexagon-top {
+    border-bottom: 50px solid #db2929;
+}
+
+.hexagon-4:hover > .hexagon-middle {
+    background-color: #db2929;
+    color: #fff;
+}
+
+.hexagon-4:hover > .hexagon-bottom {
+    border-top: 50px solid #db2929;
+}
+/* Hexagon 4 */
+
+/* Hover effects for the Hexagones */
+
+/* PART - 2 */
+
+/* PART - 3 */
+
+.zengo-part-3{
+    background-color: #1e2631;
+    padding: 65px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-line{
+    margin: auto;
+}
+
+.title-itself{
+    display: flex;
+    justify-content: center;
+    font-family: var(--special-font);
+    font-size: 45px;
+}
+
+.short-description{
+    display: flex;
+    justify-content: center;
+    color: #616e7f;
+}
+
+.p-3-short-description{
+    color: #616e7f;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 30px;
+}
+
+.title-our{
+    font-family: var(--special-font);
+    color: #fff;
+}
+
+.title-portfolio{
+    font-family: var(--special-font);
+    padding-left: 10px;
+}
+
+.title-portfolio{
+    color: #dc2929;
+}
+
+/* PART - 3 */
+
+/* Part 4 */
+.general-image-style{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.image1{
+    background-image: url('img/part3_img1.png');
+}
+
+.overlay{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222d3d;
+    opacity: 0.8;
+    display: none;
+}
+
+.project-name{
+    color: #fff;
+}
+
+.webdesign{
+    color: #c6f5ff;
+}
+
+.bryanmaxim{
+    color: #c42b2d;
+}
+
+.image1:hover > .overlay{
+    display: flex;
+}
+
+.image2:hover > .overlay{
+    display: flex;
+}
+
+.image3:hover > .overlay{
+    display: flex;
+}
+
+.image4:hover > .overlay{
+    display: flex;
+}
+
+.image5:hover > .overlay{
+    display: flex;
+}
+
+.image6:hover > .overlay{
+    display: flex;
+}
+
+.image7:hover > .overlay{
+    display: flex;
+}
+
+.image8:hover > .overlay{
+    display: flex;
+}
+
+.image2{
+    background-image: url('img/part3_img2.png');
+}
+
+.image3{
+    background-image: url('img/part3_img3.png');
+}
+
+.image4{
+    background-image: url('img/part3_img4.png');
+}
+
+.image5{
+    background-image: url('img/part3_img5.png');
+}
+
+.image6{
+    background-image: url('img/part3_img6.png');
+}
+
+.image7{
+    background-image: url('img/part3_img7.png');
+}
+
+.image8{
+    background-image: url('img/part3_img8.png');
+}
+
+
+/* Part 4 */
+
+
+
+/* Part 5 */
+.the-title{
+    font-size: 45px;
+    font-family: var(--special-font);
+    color: #dc2929;
+}
+
+.the-title-our{
+    color: var(--dark-blue-color);
+}
+
+.part5-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.actual-title{
+    display: flex;
+    justify-content: center;
+}
+
+.short-description-custom{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.part-5-our-team{
+    padding: 65px 0px;
+}
+/* Part 5 */
+
+/* Part 6 - Our Team Cards*/
+.img1:hover{
+    filter: grayscale(1);
+}
+
+.img2:hover{
+    filter: grayscale(1);
+}
+
+.img3:hover{
+    filter: grayscale(1);
+}
+
+.img4:hover{
+    filter: grayscale(1);
+}
+
+.the-card{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #e7e7e7;
+}
+
+.the-card-image{
+    width: 100%;
+}
+
+.the-card img{
+    padding: 0;
+}
+
+.the-card-info{
+    
+}
+
+.the-name{
+    font-weight: 600;
+    color: var(--red-color);
+}
+
+.the-function{
+    color: var(--grey-color);
+    font-size: 12px;
+}
+
+.the-decoration{
+    padding: 10px 0px;
+}
+
+.grey-line{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #e3e3e3;
+    height: 2px;
+    justify-content: center;
+}
+
+.red-overlay{
+    display: flex;
+    width: 30%;
+    height: 4px;
+    background-color: #db2929;
+    position: absolute;
+}
+
+.the-media i{
+    color: #dddddd;
+    font-size: 25px;
+}
+
+/* Part 6 - Our Team Cards*/
+
+/* Part - 7 Carousel*/
+.actual-carousel{
+    position: relative;
+}
+
+.mySlides{
+    background-image: url("img/carousel-background.png");
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mySlides p{
+    padding: 40px 0 40px;
+}
+
+.the-buttons{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.actual-button{
+    height: 20px;
+    width: 20px; 
+    background-color: #ac1c1c;
+    border-radius: 50%;
+}
+
+.middle{
+    margin: 0 10px;
+}
+
+.active-dot{
+    background-color: #fff;
+}
+
+/* Part - 7 Carousel*/
+
+/* Part - 8 Blog Header */
+.blog-header{
+    padding: 90px 0 50px;
+}
+
+.the-title-blog{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-family: var(--special-font);
+    color: #dc2929;
+}
+/* Part - 8 Blog Header */
+
+/* Part - 9 Blog Cards*/
+.blog-cards{
+    padding-bottom: 75px;
+}
+
+.card-picture{
+    background-image: url("img/blog-plane.png");
+    height: 160px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-picture-2{
+    background-image: url("img/blog-phone.png");
+    height: 160px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-picture-3{
+    background-image: url("img/blog-laptop.png");
+    height: 160px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-picture img{
+    margin: 5px;
+}
+
+.card-picture-2 img{
+    margin: 5px;
+}
+
+.card-picture-3 img{
+    margin: 5px;
+}
+
+.red{
+    color: #db2929;
+}
+
+.card-title{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-author{
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.link-container{
+    padding-top: 25px;
+}
+
+.read-more{
+    text-decoration: none;
+    background-color: #d2d4d5;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.read-more:hover{
+    color: #fff;
+    background-color: #db2929;
+}
+
+/* Part - 9 Blog Cards*/
+
+/* Part-10 Question Section */
+.question-section{
+    background-color: #db2929;
+    color: #fff;
+    text-align: center;
+    font-family: var(--normal-font);
+}
+
+.actual-question{
+    font-size: 30px;
+}
+
+.small-paragraph{
+    font-size: 14px;
+}
+
+.ask-word{
+    font-weight: bolder;
+    font-family: var(--special-font);
+}
+
+.question-section{
+    padding: 40px;
+}
+/* Part-10 Question Section */
+
+
+/* Part 11 - Useful Links */
+.useful-links-section{
+    background-color: #262626;
+    display: flex;
+    padding: 100px 0px;
+    align-items: center;
+}
+
+.sitemap, .partners, .useful_links, .contact{
+    color: #c4c4c4;
+}
+
+.special-line{
+    height: 2px;
+    width: 100px;
+    background-color: #515151;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.inner-line{
+    height: 4px;
+    background-color: red;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.link{
+    display: block;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #c4c4c4;
+}
+
+.link:hover{
+    color: #fff;
+}
+
+.actual-link{
+    display: flex;
+    align-items: center;
+}
+
+.actual-link i{
+    font-size: 12px;
+    color: #c4c4c4;
+}
+
+.section-figure{
+    background-color: #262626;
+}
+
+.figure-pointing-upwards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #262626;
+    padding: 60px 0px;
+}
+
+.left-line{
+    height: 2px;
+    width: 50%;
+    background-color: #333333;
+    margin-right: 6px;
+}
+
+.the-square{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+}
+
+.right-line{
+    height: 2px;
+    width: 50%;
+    background-color: #333333;
+    margin-left: 6px;
+}
+
+.double-arrow{
+    color: red;
+    transform: rotate(-45deg);
+}
+/* Part 11 - Useful Links */
+
+/* Part 13 - the footer */
+.the-footer{
+    background-color: #1f1f1f;
+    font-size: 14px;
+}
+
+.copyright{
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0 50px;
+}
+
+.zengo-template{
+    color: #dc2929;
+}
+/* Part 13 - the footer */
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+        .navbar-items{
+            display: none;
+        }
+
+        .navbar-burger{
+            display: block;
+        }
+}
+/* Media Queries */
+
